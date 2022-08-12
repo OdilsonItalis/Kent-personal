@@ -42,10 +42,6 @@ The only requirement is that at the beginning of your translation, you explain
 that it is a translation of the original post and link back to the original
 post. For example:
 
-> This is a translation of the original post
-> [Some great post](https://kentcdodds.com/blog/some-great-post) by
-> [Kent C. Dodds](https://kentcdodds.com/).
-
 If you notice an error in an existing translation or if the link to the
 translation is not working, please try to reach out to the translator directly
 to get it fixed. The only thing we can do in this repo is remove the link. If

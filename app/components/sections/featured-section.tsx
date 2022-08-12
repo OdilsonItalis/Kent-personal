@@ -120,6 +120,9 @@ function FeaturedSection({
                   value={permalink}
                 />
               ) : null}
+              <p>
+                Why this is so late?
+              </p>
             </div>
           </Grid>
         </div>
