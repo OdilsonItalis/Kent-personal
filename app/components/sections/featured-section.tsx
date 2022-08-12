@@ -71,8 +71,7 @@ function FeaturedSection({
       className={clsx(
         'w-full px-8 lg:px-0',
         leadingTeam
-          ? `set-color-team-current-${leadingTeam.toLowerCase()}`
-          : null,
+          && `set-color-team-current-${leadingTeam.toLowerCase()}`,
       )}
     >
       <div className="rounded-lg bg-gray-100 dark:bg-gray-800 lg:bg-transparent lg:dark:bg-transparent">
@@ -100,26 +99,22 @@ function FeaturedSection({
             </div>
 
             <div className="relative col-span-full mt-12 lg:col-span-4 lg:col-start-8">
-              {blurDataUrl ? (
+              {blurDataUrl &&
                 <BlurrableImage
                   blurDataUrl={blurDataUrl}
                   img={img}
                   className="aspect-w-4 aspect-h-3 lg:aspect-h-5 lg:aspect-w-4"
                 />
-              ) : (
-                <div className="aspect-w-4 aspect-h-3 lg:aspect-h-5 lg:aspect-w-4">
-                  {img}
-                </div>
-              )}
-              {leadingTeam ? (
+              }
+              {leadingTeam &&
                 <div className="absolute left-6 top-6 z-20 h-4 w-4 rounded-full bg-team-current p-1" />
-              ) : null}
-              {permalink ? (
+              }
+              {permalink &&
                 <ClipboardCopyButton
                   className="absolute left-6 top-6 z-20"
                   value={permalink}
                 />
-              ) : null}
+              }
               <p>
                 Why this is so late?
               </p>
