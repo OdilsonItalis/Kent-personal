@@ -13,6 +13,13 @@ function DiscordSection() {
           <DiscordLogo />
         </div>
 
+        <H2 className="mt-12">
+          Meet like minded people who face similar challenges.
+        </H2>
+        <H2 variant="secondary" className="mt-8" as="p">
+          Join the discord and get better at building software together.
+        </H2>
+
         <ArrowLink
           to="/discord"
           direction="right"
