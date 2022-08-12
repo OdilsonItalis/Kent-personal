@@ -60,6 +60,14 @@ function IntroductionSection() {
             my onewheel or hitting the slopes on my snowboard when it's cold.
           `}
         </H3>
+        <ArrowLink
+          to="/about"
+          direction="right"
+          className="mt-20"
+          prefetch="intent"
+        >
+          Learn more about me
+        </ArrowLink>
       </div>
     </Grid>
   )
